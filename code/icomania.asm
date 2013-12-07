@@ -561,7 +561,11 @@ an1_go:
 	mov al,is_true[0]
 	cmp al,RIGHT
 	jnz an1_ans_wrong	; wrong answer
-
+	
+	call delay_1
+	call delay_1
+	call delay_1
+	call delay_1
 	call compute_score	; compute score
 
 	POPREG
@@ -582,7 +586,11 @@ an2_go:
 	mov al,is_true[0]
 	cmp al,RIGHT
 	jnz an2_ans_wrong
-
+	
+	call delay_1
+	call delay_1
+	call delay_1
+	call delay_1
 	call compute_score
 
 	POPREG
@@ -603,7 +611,11 @@ an3_go:
 	mov al,is_true[0]
 	cmp al,RIGHT
 	jnz an3_ans_wrong
-
+	
+	call delay_1
+	call delay_1
+	call delay_1
+	call delay_1
 	call compute_score
 
 	POPREG
@@ -624,7 +636,11 @@ fo1_go:
 	mov al,is_true[0]
 	cmp al,RIGHT
 	jnz fo1_ans_wrong
-
+	
+	call delay_1
+	call delay_1
+	call delay_1
+	call delay_1
 	call compute_score
 
 	POPREG
@@ -645,7 +661,11 @@ fo2_go:
 	mov al,is_true[0]
 	cmp al,RIGHT
 	jnz fo2_ans_wrong
-
+	
+	call delay_1
+	call delay_1
+	call delay_1
+	call delay_1
 	call compute_score
 
 	POPREG
@@ -666,7 +686,11 @@ fo3_go:
 	mov al,is_true[0]
 	cmp al,RIGHT
 	jnz fo3_ans_wrong
-
+	
+	call delay_1
+	call delay_1
+	call delay_1
+	call delay_1
 	call compute_score
 
 	POPREG
@@ -687,7 +711,11 @@ ot1_go:
 	mov al,is_true[0]
 	cmp al,RIGHT
 	jnz ot1_ans_wrong
-
+	
+	call delay_1
+	call delay_1
+	call delay_1
+	call delay_1
 	call compute_score
 
 	POPREG
@@ -708,7 +736,11 @@ ot2_go:
 	mov al,is_true[0]
 	cmp al,RIGHT
 	jnz ot2_ans_wrong
-
+	
+	call delay_1
+	call delay_1
+	call delay_1
+	call delay_1
 	call compute_score
 
 	POPREG
@@ -729,7 +761,11 @@ ot3_go:
 	mov al,is_true[0]
 	cmp al,RIGHT
 	jnz ot3_ans_wrong
-
+	
+	call delay_1
+	call delay_1
+	call delay_1
+	call delay_1
 	call compute_score
 
 	POPREG
@@ -1564,6 +1600,10 @@ loading proc near
 	call delay1
 	call delay1
 	CONTROL_SHOW 0eh, 25, 17, inf7
+	call delay_1
+	call delay_1
+	call delay_1
+	call delay_1
 	
 	; press any key to continue
 	;mov ah, 01h
